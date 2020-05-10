@@ -13,6 +13,10 @@
 		36C6845B2467EA7200F8562C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C6845A2467EA7200F8562C /* Assets.xcassets */; };
 		36C6845E2467EA7200F8562C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C6845D2467EA7200F8562C /* Preview Assets.xcassets */; };
 		36C684612467EA7200F8562C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C6845F2467EA7200F8562C /* LaunchScreen.storyboard */; };
+		36C684692467EB0E00F8562C /* rain-03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36C684682467EB0E00F8562C /* rain-03.mp3 */; };
+		36C6846D24680ADD00F8562C /* playerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C6846C24680ADD00F8562C /* playerEnum.swift */; };
+		36C6846F24680B0500F8562C /* fieldStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C6846E24680B0500F8562C /* fieldStruct.swift */; };
+		36C6847124680B2C00F8562C /* Envr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C6847024680B2C00F8562C /* Envr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		36C6845D2467EA7200F8562C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36C684602467EA7200F8562C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36C684622467EA7200F8562C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C684682467EB0E00F8562C /* rain-03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain-03.mp3"; sourceTree = "<group>"; };
+		36C6846C24680ADD00F8562C /* playerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerEnum.swift; sourceTree = "<group>"; };
+		36C6846E24680B0500F8562C /* fieldStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldStruct.swift; sourceTree = "<group>"; };
+		36C6847024680B2C00F8562C /* Envr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		36C684482467EA7000F8562C = {
 			isa = PBXGroup;
 			children = (
+				36C684682467EB0E00F8562C /* rain-03.mp3 */,
 				36C684532467EA7000F8562C /* d5-xo */,
 				36C684522467EA7000F8562C /* Products */,
 			);
@@ -58,7 +67,9 @@
 			children = (
 				36C684542467EA7000F8562C /* AppDelegate.swift */,
 				36C684562467EA7000F8562C /* SceneDelegate.swift */,
-				36C684582467EA7000F8562C /* ContentView.swift */,
+				36C6847224680B8D00F8562C /* controler */,
+				36C6846A24680A9100F8562C /* model */,
+				36C6846B24680AAC00F8562C /* view */,
 				36C6845A2467EA7200F8562C /* Assets.xcassets */,
 				36C6845F2467EA7200F8562C /* LaunchScreen.storyboard */,
 				36C684622467EA7200F8562C /* Info.plist */,
@@ -73,6 +84,31 @@
 				36C6845D2467EA7200F8562C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		36C6846A24680A9100F8562C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				36C6846C24680ADD00F8562C /* playerEnum.swift */,
+				36C6846E24680B0500F8562C /* fieldStruct.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		36C6846B24680AAC00F8562C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				36C684582467EA7000F8562C /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		36C6847224680B8D00F8562C /* controler */ = {
+			isa = PBXGroup;
+			children = (
+				36C6847024680B2C00F8562C /* Envr.swift */,
+			);
+			path = controler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C684692467EB0E00F8562C /* rain-03.mp3 in Resources */,
 				36C684612467EA7200F8562C /* LaunchScreen.storyboard in Resources */,
 				36C6845E2467EA7200F8562C /* Preview Assets.xcassets in Resources */,
 				36C6845B2467EA7200F8562C /* Assets.xcassets in Resources */,
@@ -147,8 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C684552467EA7000F8562C /* AppDelegate.swift in Sources */,
+				36C6847124680B2C00F8562C /* Envr.swift in Sources */,
+				36C6846D24680ADD00F8562C /* playerEnum.swift in Sources */,
 				36C684572467EA7000F8562C /* SceneDelegate.swift in Sources */,
 				36C684592467EA7000F8562C /* ContentView.swift in Sources */,
+				36C6846F24680B0500F8562C /* fieldStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
